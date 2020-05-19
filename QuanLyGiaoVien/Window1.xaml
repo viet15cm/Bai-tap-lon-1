@@ -1,0 +1,38 @@
+﻿<Window x:Class="QuanLyGiaoVien.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyGiaoVien"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="bellRingersFontStyle" TargetType="Control">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        </Style>
+        <ContextMenu x:Key="textBoxMenu"
+          Style="{StaticResource bellRingersFontStyle}" >
+            <MenuItem Header="Hiển thị giáo viên đang chọn" Name="HienThiGV" Click="HienThiGV" />
+            <MenuItem Header="Xóa giáo viên đagn chọn" Name="ClearGV" Click="ClearGV" />
+        </ContextMenu>
+    </Window.Resources>
+    <Grid Margin="0,0,2,0">
+        <Button Content="Thoắt" HorizontalAlignment="Left" Height="42" Margin="548,354,0,0" VerticalAlignment="Top" Width="158" Click="Button_Click"/>
+        <ListView HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="256" Margin="224,200,0,0" Name="listWSach" ContextMenu="{StaticResource textBoxMenu}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="STT" Width="50" DisplayMemberBinding="{Binding STT}"/>
+                    <GridViewColumn Header="Họ Tên Giáo Viên" Width="200" DisplayMemberBinding="{Binding HoTen}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ComboBox SelectionChanged="combox_SelectionChanged_DonVi" Name="cbxDonVi" HorizontalAlignment="Left" Height="30" Margin="224,125,0,0" VerticalAlignment="Top" Width="256"/>
+        <ComboBox SelectionChanged="combox_SelectionChanged_CoSo" Name="cbxCoSo" HorizontalAlignment="Left" Height="32" Margin="220,40,0,0" VerticalAlignment="Top" Width="260"/>
+
+
+
+
+
+    </Grid>
+
+</Window>
