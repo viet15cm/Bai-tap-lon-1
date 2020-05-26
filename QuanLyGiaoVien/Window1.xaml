@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyGiaoVien"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="600">
     <Window.Resources>
         <Style x:Key="bellRingersFontStyle" TargetType="Control">
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
@@ -17,8 +17,8 @@
         </ContextMenu>
     </Window.Resources>
     <Grid Margin="0,0,2,0">
-        <Button Content="Thoắt" HorizontalAlignment="Left" Height="42" Margin="548,354,0,0" VerticalAlignment="Top" Width="158" Click="Button_Click"/>
-        <ListView HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="256" Margin="224,200,0,0" Name="listWSach" ContextMenu="{StaticResource textBoxMenu}">
+        <Button Content="Thoắt" HorizontalAlignment="Left" Height="34" Margin="358,356,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click"/>
+        <ListView HorizontalAlignment="Left" Height="119" VerticalAlignment="Top" Width="366" Margin="98,216,0,0" Name="listWSach" ContextMenu="{StaticResource textBoxMenu}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="STT" Width="50" DisplayMemberBinding="{Binding STT}"/>
@@ -26,8 +26,11 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <ComboBox SelectionChanged="combox_SelectionChanged_DonVi" Name="cbxDonVi" HorizontalAlignment="Left" Height="30" Margin="224,125,0,0" VerticalAlignment="Top" Width="256"/>
-        <ComboBox SelectionChanged="combox_SelectionChanged_CoSo" Name="cbxCoSo" HorizontalAlignment="Left" Height="32" Margin="220,40,0,0" VerticalAlignment="Top" Width="260"/>
+        <ComboBox SelectionChanged="combox_SelectionChanged_DonVi" Name="cbxDonVi" HorizontalAlignment="Left" Height="30" Margin="204,120,0,0" VerticalAlignment="Top" Width="256"/>
+        <ComboBox SelectionChanged="combox_SelectionChanged_CoSo" Name="cbxCoSo" HorizontalAlignment="Left" Height="32" Margin="204,58,0,0" VerticalAlignment="Top" Width="256"/>
+        <Label Content="Cơ Sỡ : " HorizontalAlignment="Left" Margin="98,58,0,0" VerticalAlignment="Top" Width="80" Height="32"/>
+        <Label Content="Đơn vị đào tạo :" HorizontalAlignment="Left" Margin="97,124,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Danh sách giáo viên :" HorizontalAlignment="Left" Margin="97,185,0,0" VerticalAlignment="Top" Width="123"/>
 
 
 

@@ -6,23 +6,23 @@
         
         xmlns:local="clr-namespace:QuanLyGiaoVien"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="600">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="217*"/>
-            <ColumnDefinition Width="179*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox Name="txb_Database" HorizontalAlignment="Left" Margin="243,143,0,0" Text="QuanLyGiaoVien" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="24" Grid.ColumnSpan="2"/>
-        <TextBox Name="txb_User" HorizontalAlignment="Left" Margin="243,198,0,0" Text="UserQLGV" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="21" TextChanged="txb_User_TextChanged" Grid.ColumnSpan="2"/>
-        <Label Content="Tên Database" HorizontalAlignment="Left" Margin="153,142,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="154,247,0,0" VerticalAlignment="Top"/>
-        <Label Content="User" HorizontalAlignment="Left" Margin="154,194,0,0" VerticalAlignment="Top"/>
-        <Button Content="Kết Nối" HorizontalAlignment="Left" Margin="417,300,0,0" VerticalAlignment="Top" Width="62" Click="Connection" Grid.ColumnSpan="2"/>
-        <Label Content="Tên Máy" HorizontalAlignment="Left" Margin="153,99,0,0" VerticalAlignment="Top" Width="60"/>
-        <TextBox Name="txb_Sever" HorizontalAlignment="Left" Height="26" Margin="243,99,0,0" Text="DESKTOP-INTTIDN\SQLEXPRESS" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Grid.ColumnSpan="2"/>
-        <Button Content="Thoắt" HorizontalAlignment="Left" Margin="216,300,0,0" VerticalAlignment="Top" Width="75" Click="Close"/>
-        <PasswordBox Name="txb_Password" HorizontalAlignment="Left" Height="26" Margin="243,247,0,0" VerticalAlignment="Top" Width="230" Password="viet12345" Grid.ColumnSpan="2"/>
+        <GroupBox  Background="Aquamarine" Header="ĐĂNG NHẬP TÀI KHOẢN" HorizontalAlignment="Left" Height="298" Margin="124,37,0,0" VerticalAlignment="Top" Width="343">
+            <StackPanel Margin="10,10,5,12">
+                <Label Content="Tên Máy :" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60"/>
+                <TextBox x:Name="txb_Sever" HorizontalAlignment="Left" Height="22"  Text="DESKTOP-INTTIDN\SQLEXPRESS" TextWrapping="Wrap" VerticalAlignment="Top" Width="306"/>
+                <Label Content="Tên Database :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="txb_Database" HorizontalAlignment="Left" Text="QuanLyGiaoVien" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" Height="21"/>
 
+                <Label Content="User :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox Name="txb_User" HorizontalAlignment="Left" Text="UserQLGV" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" Height="21" TextChanged="txb_User_TextChanged" Grid.ColumnSpan="2"/>
+                <Label Content="Password :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <PasswordBox Name="txb_Password" HorizontalAlignment="Left" Height="22"  VerticalAlignment="Top" Width="306" Password="viet12345" Grid.ColumnSpan="2"/>
+                <Button Content="Kết Nối" HorizontalAlignment="Left" VerticalAlignment="Top" Width="306" Click="Connection" Grid.ColumnSpan="2"/>
+                <Button Content="Thoắt" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="306" Click="Close"/>
+            </StackPanel>
+        </GroupBox >
     </Grid>
 </Window>

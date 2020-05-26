@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyGiaoVien"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Window2" Height="420" Width="500">
     <Grid>
-        <TextBlock Name="txblHTV" HorizontalAlignment="Left" Height="26" Margin="266,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="270"/>
-        <TextBlock Name="txblSDT" HorizontalAlignment="Left" Height="26" Margin="266,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="273"/>
-        <TextBlock Name="txblGC" HorizontalAlignment="Left" Height="31" Margin="269,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="270"/>
-        <TextBlock Name="txblDVDT" HorizontalAlignment="Left" Height="25" Margin="268,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268"/>
-        <TextBlock Name="txblCS" HorizontalAlignment="Left" Height="29" Margin="269,333,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268"/>
-        <Label Content="Họ và tên giáo viên" HorizontalAlignment="Left" Height="26" Margin="65,68,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Content="Số điện thoại" HorizontalAlignment="Left" Height="26" Margin="65,126,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Content="Ghi chú" HorizontalAlignment="Left" Height="31" Margin="65,190,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Content="Đơn vị đào tạo" HorizontalAlignment="Left" Height="25" Margin="65,257,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Content="Cơ sở" HorizontalAlignment="Left" Height="32" Margin="65,333,0,0" VerticalAlignment="Top" Width="131"/>
-        <Label Content="Thông tin của giáo viên" HorizontalAlignment="Left" Height="31" Margin="266,28,0,0" VerticalAlignment="Top" Width="185"/>
-        <Button Content="Thoắt" HorizontalAlignment="Left" Height="25" Margin="528,367,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click"/>
+        <TextBlock Background="Coral"  Name="txblHTV" HorizontalAlignment="Left" Height="26" Margin="224,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="233"/>
+        <TextBlock Background="Coral" Name="txblSDT" HorizontalAlignment="Left" Height="26" Margin="224,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="233"/>
+        <TextBlock Background="Coral" Name="txblGC" HorizontalAlignment="Left" Height="24" Margin="224,214,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="233"/>
+        <TextBlock Background="Coral" Name="txblDVDT" HorizontalAlignment="Left" Height="25" Margin="224,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="233"/>
+        <TextBlock Background="Coral" Name="txblCS" HorizontalAlignment="Left" Height="25" Margin="226,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231"/>
+        <Label Content="Họ và tên giáo viên :" HorizontalAlignment="Left" Height="26" Margin="62,113,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Số điện thoại :" HorizontalAlignment="Left" Height="26" Margin="63,167,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Ghi chú :" HorizontalAlignment="Left" Height="31" Margin="63,214,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Đơn vị đào tạo :" HorizontalAlignment="Left" Height="26" Margin="62,259,0,0" VerticalAlignment="Top" Width="131"/>
+        <Label Content="Cơ sở " HorizontalAlignment="Left" Height="32" Margin="64,304,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label Background="AliceBlue" FontSize="30" Content="Thông tin của giáo viên" HorizontalAlignment="Left" Height="52" Margin="101,20,0,0" VerticalAlignment="Top" Width="338"/>
+        <Button Background="Azure" Content="Quay Về" HorizontalAlignment="Left" Height="26" Margin="354,343,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
 
     </Grid>
 </Window>
