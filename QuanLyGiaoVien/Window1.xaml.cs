@@ -41,7 +41,7 @@ namespace QuanLyGiaoVien
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            close();
         }
 
         //Hiển thị bảng giáo viên
@@ -123,7 +123,7 @@ namespace QuanLyGiaoVien
         private void deleteGiaoVien()
         {
             MessageBoxResult key = MessageBox.Show(
-             "Bạn có muốn xóa giáo viên đang chọn",
+             "Bạn có muốn xóa giáo viên :[" + chooseGiaoVien().HoTen + "] ra khỏi danh sách",
              "Xóa",
              MessageBoxButton.YesNo,
              MessageBoxImage.Question,
@@ -181,5 +181,43 @@ namespace QuanLyGiaoVien
             displayData_DonVi();
 
         }
+
+        private void listWSach_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            if (chooseGiaoVien() != null && chooseDonVi() != null && chooseCoSo() != null)
+            {
+                window2.txblHTV.Text = chooseGiaoVien().HoTen;
+
+                window2.txblSDT.Text = chooseGiaoVien().SoDT;
+                window2.txblGC.Text = chooseGiaoVien().GhiChu;
+                window2.txblDVDT.Text = chooseDonVi().TenDonVi;
+                window2.txblCS.Text = chooseCoSo().TenCoSo;
+                window2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Co Lỗi Bạn Chưa chon giáo viên có lỗi null xãy ra");
+            }
+        }
+
+        public void close()
+        {
+            MessageBoxResult key = MessageBox.Show(
+             "Bạn có muốn thoắt ",
+             "Thoắt",
+             MessageBoxButton.YesNo,
+             MessageBoxImage.Question,
+             MessageBoxResult.No);
+            if (key == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                Application.Current.Shutdown();
+            }
+        }
+
     }
 }

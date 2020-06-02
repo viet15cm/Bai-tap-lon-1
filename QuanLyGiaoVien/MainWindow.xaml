@@ -9,10 +9,10 @@
         Title="MainWindow" Height="400" Width="600">
 
     <Grid>
-        <GroupBox  Background="Aquamarine" Header="ĐĂNG NHẬP TÀI KHOẢN" HorizontalAlignment="Left" Height="298" Margin="124,37,0,0" VerticalAlignment="Top" Width="343">
+        <GroupBox  Background="Aquamarine" Header="KẾT NỐI HỆ THỐNG" HorizontalAlignment="Left" Height="298" Margin="124,37,0,0" VerticalAlignment="Top" Width="343">
             <StackPanel Margin="10,10,5,12">
                 <Label Content="Tên Máy :" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60"/>
-                <TextBox x:Name="txb_Sever" HorizontalAlignment="Left" Height="22"  Text="DESKTOP-INTTIDN\SQLEXPRESS" TextWrapping="Wrap" VerticalAlignment="Top" Width="306"/>
+                <TextBox x:Name="txb_Sever" HorizontalAlignment="Left" Height="22"  Text="PC-03\SQLEXPRESS" TextWrapping="Wrap" VerticalAlignment="Top" Width="306"/>
                 <Label Content="Tên Database :" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <TextBox x:Name="txb_Database" HorizontalAlignment="Left" Text="QuanLyGiaoVien" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" Height="21"/>
 

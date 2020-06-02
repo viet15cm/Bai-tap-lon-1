@@ -12,13 +12,13 @@
         </Style>
         <ContextMenu x:Key="textBoxMenu"
           Style="{StaticResource bellRingersFontStyle}" >
-            <MenuItem Header="Hiển thị giáo viên đang chọn" Name="HienThiGV" Click="HienThiGV" />
-            <MenuItem Header="Xóa giáo viên đagn chọn" Name="ClearGV" Click="ClearGV" />
+            <MenuItem Header="Hiển thị thông tin giáo viên" Name="HienThiGV" Click="HienThiGV" />
+            <MenuItem Header="Xóa giáo viên " Name="ClearGV" Click="ClearGV" />
         </ContextMenu>
     </Window.Resources>
     <Grid Margin="0,0,2,0">
         <Button Content="Thoắt" HorizontalAlignment="Left" Height="34" Margin="358,356,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click"/>
-        <ListView HorizontalAlignment="Left" Height="119" VerticalAlignment="Top" Width="366" Margin="98,216,0,0" Name="listWSach" ContextMenu="{StaticResource textBoxMenu}">
+        <ListView HorizontalAlignment="Left" Height="119" VerticalAlignment="Top" Width="366" Margin="98,216,0,0" Name="listWSach" ContextMenu="{StaticResource textBoxMenu}" MouseDoubleClick="listWSach_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="STT" Width="50" DisplayMemberBinding="{Binding STT}"/>
