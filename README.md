@@ -1,4 +1,4 @@
-#Tạo database 
+# Tạo database 
 
 Vào hệ quản trị SQL SERVER, tải tập tin QuanLyGiaoVien.sql có đính kèm sẵn tô đen hết tấc cả các dòng còn lạinhấn phím F5 hoặc nhấn vào ô "Execute"
 
@@ -24,7 +24,7 @@ Sau đó bấm "OK", như trong hình:
 
 ## Cấu hình lại file App.config
 
-Mở project QuanLyGiaoVien -> file app.config : tại thẻ "<add>...</add>" ta điền chính xác thông tin đã tạo trên datadase trong đó:
+Mở project QuanLyGiaoVien -> file app.config : tại thẻ "add" ta điền chính xác thông tin đã tạo trên datadase trong đó:
 
 Server: là tên server mặc định trong phần mền cơ sỡ dữ liệu
 
@@ -54,27 +54,28 @@ Khi người dùng chọn một cơ sở thì chương trình hiển thị danh 
 
 ![Image](img/hinh9.png)
 
- -Khi người dùng chọn menu "Hiển thị thông tin chi tiết GV" hoặc double click vào một GV trong danh sách, chương trình sẽ hiển thị form   trên với thông tin giáo viên đang chọn. 
+ Khi người dùng chọn menu "Hiển thị thông tin chi tiết GV" hoặc double click vào một GV trong danh sách, chương trình sẽ hiển thị form     trên với thông tin giáo viên đang chọn. 
  
- - Người dùng nhấn nút quay lại để thoát khỏi form. 
+ Người dùng nhấn nút quay lại để thoát khỏi form. 
  
  ![Image](img/hinh11.png)
  ![Image](img/hinh10.png)
  
  
- -Khi người dùng chọn menu "Xóa GV đang chọn" chương trình sẽ xuất hiện hộp thoại xác nhận.
+ Khi người dùng chọn menu "Xóa GV đang chọn" chương trình sẽ xuất hiện hộp thoại xác nhận.
  
- -Nếu người dùng đồng ý, chương  trình sẽ xóa GV này ra khỏi database và cập nhật danh sách Trên màn hình). 
+ Nếu người dùng đồng ý, chương  trình sẽ xóa GV này ra khỏi database và cập nhật danh sách Trên màn hình). 
  
- -Nếu người dùng không đồng ý trở lại chương trình. 
+ Nếu người dùng không đồng ý trở lại chương trình. 
  
  ![Image](img/hinh12.png)
  
- -Khi người dùng chọn nut "Thoat" chương trình sẽ xuất hiện hộp thoại xác nhận.
  
- -Nếu người dùng đồng ý, chương  trình sẽ đóng lại ngay lập tức
+ Khi người dùng chọn nut "Thoat" chương trình sẽ xuất hiện hộp thoại xác nhận.
  
- -Nếu người dùng không đồng ý trở lại chương trình. 
+ Nếu người dùng đồng ý, chương  trình sẽ đóng lại ngay lập tức
+ 
+ Nếu người dùng không đồng ý trở lại chương trình. 
  
  ![Image](img/hinh13.png)
  
